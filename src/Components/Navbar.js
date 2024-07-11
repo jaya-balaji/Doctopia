@@ -48,11 +48,11 @@ const Navbar = () => {
         <div className='flex justify-center items-center'>
             <span className='text-base md:text-lg md:font-semibold'>Start Program</span>
         </div>
-            {change && <div className='pl-2 flex items-center bg-slate-950 rounded-full'>
+            {change && <div className='pl-2 flex items-center bg-slate-950 rounded-full' onClick={()=>setshowOptions(false)}>
             <span className=' text-white  text-left text-xs md:p-2'>Menu</span>
             <RiRadioButtonFill className='text-white rounded-lg h-7 w-7 md:h-12 md:w-12' onClick={()=>setchange(false)}/>
         </div>} 
-            {!change && <div className='pr-[9px] flex items-center bg-slate-950 rounded-full'>
+            {!change && <div className='pr-[9px] flex items-center bg-slate-950 rounded-full' onClick={()=>setshowOptions(false)}>
             <RiRadioButtonFill className='text-white rounded-lg h-7 w-7 md:h-12 md:w-12' onClick={()=>setchange(true)}/>  
             <span className='text-white  text-left text-xs md:p-2'>Items</span>
         </div>}
