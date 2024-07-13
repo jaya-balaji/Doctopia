@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.Background{
+  background : url('./Assets/girl.webp');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+}
