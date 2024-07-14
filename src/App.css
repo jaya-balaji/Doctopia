@@ -43,3 +43,24 @@
   background-position : center;
   background-size : cover;
 }
+
+.BackgroundAtVACalSmall{
+  background : url('./Assets/musgirl.avif');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+}
+
+.BackgroundAtVACalBig{
+  background : url('./Assets/boyspeaking.jpg');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+}
+
+.Doctor{
+  background : url('./Assets/Doctor.avif');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+}
