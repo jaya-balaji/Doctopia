@@ -9,7 +9,7 @@ import Girl from "../Assets/girl.webp";
 
 const Main = () => {
   return (
-    <div className="px-3 md:px-16 md:pb-5">
+    <div className="px-3 shadow-2xl rounded-3xl md:shadow-none md:rounded-none md:px-16 pb-3 md:pb-5">
       <div className="flex flex-col justify-between bg-gradient-to-br from-customCol1 via-customCol2 to-customCol3 rounded-3xl px-3 h-[50vh] md:px-16 md:py-8 md:h-[100vh]">
         <div>
           <div className="flex flex-col p-4 pt-5 gap-4 md:p-16 md:pt-12 md:gap-6">
