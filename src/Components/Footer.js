@@ -6,10 +6,14 @@ import { SiTiktok } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
+import { useContext } from "react";
+import { MyContext } from "./Context";
 
 const Footer = () => {
+    const { value, setValue } = useContext(MyContext);
+
     return (
-        <div className='p-4'>
+        <div onClick={()=>setValue(false)} id='about' className='p-4'>
             <div className='flex flex-col gap-16 md:justify-between rounded-3xl text-white bg-[#201c1c] p-6 md:p-12 md:py-12 md:h-[85vh]'>
                 <div className='flex flex-col gap-12 md:gap-0 md:flex-row md:justify-between'>
                     <div className='flex flex-col gap-6 md:gap-12'>
@@ -39,19 +43,19 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='flex flex-row items-center gap-4 md:p-3'>
-                            <div className='rounded-full border-white md:border-[1px] md:p-4'>
+                            <div className='rounded-full border-white hover:shadow-2xl hover:scale-[105%] transition-transform md:border-[1px] md:p-4'>
                                 <FaYoutube className='md:scale-[130%]'/>
                             </div>
-                            <div className='rounded-full border-white md:border-[1px] md:p-4'>
+                            <div className='rounded-full border-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 md:border-[1px] md:p-4'>
                                 <SiTiktok className='md:scale-[130%]' />
                             </div>
-                            <div className='rounded-full border-white md:border-[1px] md:p-4'>
+                            <div className='rounded-full border-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 md:border-[1px] md:p-4'>
                                 <FaLinkedin className='md:scale-[130%]'/>
                             </div>
-                            <div className='rounded-full border-white md:border-[1px] md:p-4'>
+                            <div className='rounded-full border-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 md:border-[1px] md:p-4'>
                                 <RiInstagramFill className='md:scale-[130%]'/>
                             </div>
-                            <div className='rounded-full border-white md:border-[1px] md:p-4'>
+                            <div className='rounded-full border-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 md:border-[1px] md:p-4'>
                                 <FaFacebookSquare className='md:scale-[130%]'/>
                             </div>
                         </div>
@@ -59,31 +63,31 @@ const Footer = () => {
                     <div className='flex flex-row gap-10 md:gap-44'>
                         <div>
                             <ul className='flex flex-col gap-2 md:gap-6'>
-                                <li className='md:text-lg font-semibold'>Company</li>
-                                <li className='font-light'>Features</li>
-                                <li className='font-light'>Pricing</li>
-                                <li className='font-light'>About Us</li>
-                                <li className='font-light'>Contact</li>
-                                <li className='font-light'>Pricing</li>
+                                <li className='hover:underline md:text-lg font-semibold'>Company</li>
+                                <li className='hover:underline font-light'>Features</li>
+                                <li className='hover:underline font-light'>Pricing</li>
+                                <li className='hover:underline font-light'>About Us</li>
+                                <li className='hover:underline font-light'>Contact</li>
+                                <li className='hover:underline font-light'>Pricing</li>
                             </ul>
                         </div>
                         <div>
                             <ul className='flex flex-col gap-2 md:gap-6'>
-                                <li className='md:text-lg font-semibold'>Resources</li>
-                                <li className='font-light'>Blog</li>
-                                <li className='font-light'>Customer Stories</li>
-                                <li className='font-light'>Information</li>
-                                <li className='font-light'>Legal</li>
-                                <li className='font-light'>Payments</li>
+                                <li className='hover:underline md:text-lg font-semibold'>Resources</li>
+                                <li className='hover:underline font-light'>Blog</li>
+                                <li className='hover:underline font-light'>Customer Stories</li>
+                                <li className='hover:underline font-light'>Information</li>
+                                <li className='hover:underline font-light'>Legal</li>
+                                <li className='hover:underline font-light'>Payments</li>
                             </ul>
                         </div>
                         <div>
                             <ul className='flex flex-col gap-2 md:gap-6'>
-                                <li className='md:text-lg font-semibold'>Career</li>
-                                <li className='font-light'>Jobs</li>
-                                <li className='font-light'>Hiring</li>
-                                <li className='font-light'>News</li>
-                                <li className='font-light'>tips & Tricks</li>
+                                <li className='hover:underline md:text-lg font-semibold'>Career</li>
+                                <li className='hover:underline font-light'>Jobs</li>
+                                <li className='hover:underline font-light'>Hiring</li>
+                                <li className='hover:underline font-light'>News</li>
+                                <li className='hover:underline font-light'>tips & Tricks</li>
                             </ul>
                         </div>
                     </div>
@@ -94,19 +98,19 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-row gap-2 text-xs md:text-base md:gap-10 font-light'>
                         <div>
-                            <div>Terms</div>
+                            <div className='hover:underline'>Terms</div>
                         </div>
                         <div>
-                            <div>Privacy</div>
+                            <div className='hover:underline'>Privacy</div>
                         </div>
                         <div>
-                            <div>Cookies</div>
+                            <div className='hover:underline'>Cookies</div>
                         </div>
                         <div>
-                            <div>Legal</div>
+                            <div className='hover:underline'>Legal</div>
                         </div>
                         <div>
-                            <div>recalls</div>
+                            <div className='hover:underline'>recalls</div>
                         </div>
                     </div>
                 </div>

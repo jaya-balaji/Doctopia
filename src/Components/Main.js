@@ -1,16 +1,21 @@
 import React from "react";
 import { HiOutlineCubeTransparent } from "react-icons/hi";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 import { GrCircleInformation } from "react-icons/gr";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Girl from "../Assets/girl.webp";
+import { useContext } from "react";
+import { MyContext } from "./Context";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Main = () => {
+  const { value, setValue } = useContext(MyContext);
+
   return (
-    <div className="px-3 shadow-2xl rounded-3xl md:shadow-none md:rounded-none md:px-16 pb-3 md:pb-5">
-      <div className="flex flex-col justify-between bg-gradient-to-br from-customCol1 via-customCol2 to-customCol3 rounded-3xl px-3 h-[50vh] md:px-16 md:py-8 md:h-[100vh]">
+    <div onClick={()=>setValue(false)} className="px-3 shadow-2xl rounded-3xl md:shadow-none md:rounded-none md:px-16 pb-3 md:pb-5">
+      <div  id="home" className="flex flex-col justify-between bg-gradient-to-br from-customCol1 via-customCol2 to-customCol3 rounded-3xl px-3 h-[50vh] md:px-16 md:py-8 md:h-[100vh]">
         <div>
           <div className="flex flex-col p-4 pt-5 gap-4 md:p-16 md:pt-12 md:gap-6">
             <div className="flex flex-row items-center text-white gap-2 md:gap-4 md:pl-4">
@@ -23,20 +28,24 @@ const Main = () => {
                 </span>
               </div>
             </div>
-            <div className="md:w-[70%]">
+            <div className="md:w-[70%]">  
               <span className="text-white font-bold text-4xl md:text-8xl">
                 Revolutionizing Healthcare Tech
               </span>
             </div>
-            <div className="flex flex-row bg-white items-center rounded-full gap-1 p-1 w-32 md:gap-4 md:p-2 md:w-48">
+            <div className="flex flex-row bg-white items-center rounded-full gap-1 p-1 w-32 hover:shadow-2xl hover:scale-[105%] transition-transform duration-1500 md:gap-4 md:p-2 md:w-48">
               <span className="text-xs md:text-base md:font-medium">Start Checkup Now</span>
               <FaArrowRight className="text-xs md:text-base" />
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex flex-row gap-3 pl-4 pb-4 md:gap-10 md:pl-16">
-            <div className="flex flex-col justify-between bg-white rounded-3xl w-[150px] h-[150px] p-3 md:w-[200px] md:h-[200px] md:p-5 Background">
+        <div className="flex flex-col gap-3">
+          <div className="flex text-white relative left-[45px] flex-row gap-14">
+              <FaArrowLeft />
+              <FaArrowRight />
+          </div>
+          <div className="flex md:flex-row gap-3 pl-4 pb-4 md:gap-10 md:pl-16">
+            <div className="flex flex-col justify-between bg-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-1500 rounded-3xl w-[150px] h-[150px] p-3 md:w-[200px] md:h-[200px] md:p-5 Background">
               <div className="flex flex-row justify-between items-center md:gap-3">
                 <div className="border-[1px] md:border-2 border-white rounded-3xl">
                   <span className="text-[10px] md:text-base text-white p-2">
@@ -58,7 +67,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex flex-col justify-between bg-white rounded-3xl md:w-[200px] md:h-[200px] md:p-5">
+            <div className="hidden md:flex flex-col justify-between hover:shadow-2xl hover:scale-[105%] transition-transform duration-1500 bg-white rounded-3xl md:w-[200px] md:h-[200px] md:p-5">
               <div className="flex flex-row justify-between items-center md:gap-3">
                 <div className="border-2 border-black rounded-3xl">
                   <span className="md:p-2">Satistical Data</span>
@@ -79,7 +88,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex flex-col justify-between bg-white rounded-3xl md:gap-2 md:w-[200px] md:h-[200px] md:p-4">
+            <div className="hidden md:flex flex-col justify-between hover:shadow-2xl hover:scale-[105%] transition-transform duration-1500 bg-white rounded-3xl md:gap-2 md:w-[200px] md:h-[200px] md:p-4">
               <div className="flex flex-row justify-between items-center md:gap-1 md:p-0">
                 <div className="flex flex-row border-2 border-black rounded-3xl">
                   <span className="md:p-1 md:text-sm md:px-2">

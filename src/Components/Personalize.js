@@ -1,8 +1,12 @@
 import React from 'react';
+import { useContext } from "react";
+import { MyContext } from "./Context";
 
 const Personalize = () => {
+    const { value, setValue } = useContext(MyContext);
+
     return (
-        <div className='flex flex-col my-2 gap-3 md:my-10 md:gap-5'>
+        <div onClick={()=>setValue(false)} id='plans' className='flex flex-col my-2 gap-3 md:my-10 md:gap-5'>
             <div className='flex flex-row p-2 pb-0 md:p-8'>
                 <div className='hidden md:flex flex-col items-center justify-center flex-[2] relative'>
                     <div className='md:rounded-3xl absolute border-[1px] md:border-2  md:right-12 md:top-2'>

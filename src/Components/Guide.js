@@ -1,8 +1,12 @@
 import React from 'react';
+import { useContext } from "react";
+import { MyContext } from "./Context";
 
 const Guide = () => {
+  const { value, setValue } = useContext(MyContext);
+
   return (
-    <div className='px-8 py-4 md:px-16 md:py-4 md:pb-8'>
+    <div onClick={()=>setValue(false)} className='px-8 py-4 md:px-16 md:py-4 md:pb-8'>
         <div className='flex flex-col gap-4 md:gap-0 md:flex-row'>
             <div className='text-2xl md:text-5xl font-bold md:font-semibold md:pr-24 md:w-[85%]'>
                 <span>Guiding You On Your Personal Journey To Optimal Health</span>

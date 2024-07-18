@@ -9,11 +9,16 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { BsExclamationCircle } from "react-icons/bs";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useContext } from "react";
+import { MyContext } from "./Context";
+
 
 const VirtualAppoinments = () => {
+  const { value, setValue } = useContext(MyContext);
+
   return (
-    <div className="flex flex-col gap-8 pt-[4vh] px-4 pb-[6vh] md:flex-row md:gap-5 md:px-16 md:pt-[6vh]">
-      <div className="flex flex-row bg-white shadow-2xl sha rounded-3xl h-[40vh] items-center md:items-baseline md:h-auto w-[100%] p-3 md:w-[55%] md:p-6 md:pr-3">
+    <div onClick={()=>setValue(false)} id="facility" className="flex flex-col gap-8 pt-[4vh] px-4 pb-[6vh] md:flex-row md:gap-5 md:px-16 md:pt-[6vh]">
+      <div className="flex flex-row bg-white shadow-2xl hover:shadow-2xl hover:scale-[102%] transition-transform duration-500 rounded-3xl h-[40vh] items-center md:items-baseline md:h-auto w-[100%] p-3 md:w-[55%] md:p-6 md:pr-3">
         <div className="flex flex-col justify-between rounded-3xl h-[35vh] w-[40vh] p-3 md:h-[68vh] md:w-[45vh] md:p-7 BackgroundAtVACalBig">
           <div className="flex flex-row justify-between">
             <div className="BackgroundAtVACalSmall flex flex-row justify-end rounded-2xl shadow-black shadow-2xl h-20 w-16 p-1 md:p-2 md:h-32 md:w-24">
@@ -101,7 +106,7 @@ const VirtualAppoinments = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-white rounded-3xl shadow-2xl p-3 md:p-0 md:pl-4">
+      <div className="flex flex-col bg-white hover:shadow-2xl hover:scale-[102%] transition-transform duration-500 rounded-3xl shadow-2xl p-3 md:p-0 md:pl-4">
         <div className="flex items-center border-b-2 p-4 md:p-5 md:w-[95%]">
           <span className="font-semibold text-4xl w-[55%] md:w-[60%] md:text-6xl ">Advantages & Facilities</span>
         </div>

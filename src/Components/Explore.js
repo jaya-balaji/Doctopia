@@ -7,13 +7,17 @@ import { FaBriefcaseMedical } from "react-icons/fa6";
 import { CiStethoscope } from "react-icons/ci";
 import { TbActivityHeartbeat } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa";
+import { useContext } from "react";
+import { MyContext } from "./Context";
 
 const Explore = () => {
+    const { value, setValue } = useContext(MyContext);
+
     return (
-        <div className='flex flex-col py-8 px-16 md:py-10 md:px-10'>
+        <div onClick={()=>setValue(false)} className='flex flex-col py-8 px-16 md:py-10 md:px-10'>
             <div className='flex flex-col gap-5 md:flex-row md:gap-8'>
                 <div className='flex flex-col w-full md:flex-[4] items-center'>
-                    <div className='flex flex-col items-center gap-6 relative shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
+                    <div className='flex flex-col hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 items-center gap-6 relative shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
                         <div className='bg-slate-100 p-6 rounded-full'>
                             <FaSyringe className='scale-[200%]' />
                         </div>
@@ -29,7 +33,7 @@ const Explore = () => {
                     </div>
                 </div>
                 <div className='flex flex-col w-full flex-[4] items-center'>
-                    <div className='flex flex-col items-center gap-6 relative bg-[#98acf4] rounded-3xl p-4 md:p-12 w-full'>
+                    <div className='flex flex-col items-center gap-6 hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 relative bg-[#98acf4] rounded-3xl p-4 md:p-12 w-full'>
                         <div className='bg-blue-300 p-6 md:p-8 rounded-full'>
                             <FaMaskFace className='scale-[200%] text-white' />
                         </div>
@@ -40,12 +44,12 @@ const Explore = () => {
                             <FiMinus className='text-black'/>
                         </div>
                     </div>
-                    <div className='bg-[#98acf4] rounded-3xl p-6'>
+                    <div className='bg-[#98acf4] hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 rounded-3xl p-6'>
                         <span className='text-white'>Optimizing Stratergies And  Practices For Enhanced Muscle Recovery</span>
                     </div>
                 </div>
                 <div className='flex flex-col flex-[4] items-center'>
-                    <div className='flex flex-col items-center gap-6 relative shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
+                    <div className='flex flex-col items-center gap-6 relative hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
                         <div className='bg-slate-100 p-6 rounded-full'>
                             <FaBriefcaseMedical className='md:scale-[200%]' />
                         </div>
@@ -61,7 +65,7 @@ const Explore = () => {
                     </div>
                 </div>
                 <div className='flex flex-col flex-[4] items-center'>
-                    <div className='flex flex-col items-center gap-6 relative bg-[#98acf4] rounded-3xl p-4 md:p-12 w-full'>
+                    <div className='flex flex-col items-center gap-6 hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 relative bg-[#98acf4] rounded-3xl p-4 md:p-12 w-full'>
                         <div className='bg-blue-300 p-6 md:p-8 rounded-full'>
                             <CiStethoscope className='scale-[200%] text-white' />
                         </div>
@@ -72,12 +76,12 @@ const Explore = () => {
                             <FiMinus className='text-black' />
                         </div>
                     </div>
-                    <div className='bg-[#98acf4] rounded-3xl p-6'>
+                    <div className='bg-[#98acf4] hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 rounded-3xl p-6'>
                         <span className='text-white'>Comprehensive Guide To Maximizing Muscle Recovery Time And Effective Pain Management</span>
                     </div>
                 </div>
                 <div className='flex flex-col flex-[4] items-center'>
-                    <div className='flex flex-col items-center gap-6 relative shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
+                    <div className='flex flex-col items-center hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 gap-6 relative shadow-2xl bg-white rounded-3xl p-4 md:p-12 w-full'>
                         <div className='bg-slate-100 p-6 rounded-full'>
                             <TbActivityHeartbeat className='scale-[200%]' />
                         </div>
@@ -94,7 +98,7 @@ const Explore = () => {
                 </div>
             </div>
             <div className='flex items-center justify-center md:p-8'>
-                <div className='flex flex-row items-center justify-between gap-3 p-3 px-6 md:gap-6 md:p-3 md:px-6 text-white bg-black rounded-3xl'>
+                <div className='flex flex-row items-center hover:shadow-2xl hover:scale-[105%] transition-transform duration-500 justify-between gap-3 p-3 px-6 md:gap-6 md:p-3 md:px-6 text-white bg-black rounded-3xl'>
                     <span>Explore Now</span>
                     <FaArrowRight />
                 </div>
