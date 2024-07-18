@@ -28,7 +28,7 @@ const Footer = () => {
                             <div>
                                 <form className='flex flex-row md:w-[55vh]'>
                                     <div className='flex items-center justify-start border-b-[1px] md:w-[190%]'>
-                                        <input type='text' placeholder='Email address' className='text-white bg-[#201c1c]'></input>
+                                        <input type='text' placeholder='Email address' className='text-white bg-[#201c1c] focus:outline-none'></input>
                                     </div>
                                     <div className='flex items-center justify-center bg-white text-black rounded-t-lg p-3 md:p-6'>
                                         <button>
@@ -92,7 +92,7 @@ const Footer = () => {
                     <div>
                         <span className='md:text-9xl text-xl font-bold text-white opacity-10'>DOCTOPIA</span>
                     </div>
-                    <div className='flex flex-row gap-2 md:gap-10 font-light'>
+                    <div className='flex flex-row gap-2 text-xs md:text-base md:gap-10 font-light'>
                         <div>
                             <div>Terms</div>
                         </div>

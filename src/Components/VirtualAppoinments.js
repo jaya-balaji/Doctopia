@@ -49,12 +49,12 @@ const VirtualAppoinments = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ietms-center w-72 pr-0 md:w-[60%]">
+        <div className="flex flex-col w-76 md:pr-0 md:w-[60%]">
           <div className="flex justify-center items-center border-b-2 p-3 relative md:p-5">
             <span className="font-semibold text-2xl md:text-5xl">
               Virtual Appointments
             </span>
-            <div className="bg-slate-200 bg-opacity-45 rounded-full absolute top-0 right-0 p-2 md:top-[0px] md:right-[10px] md:p-4">
+            <div className="bg-slate-200 bg-opacity-45 rounded-full absolute top-0 right-4 p-2 md:top-[0px] md:right-[10px] md:p-4">
                 <HiOutlineXMark className="text-black md:scale-[150%]" />
             </div>
           </div>
