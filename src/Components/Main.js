@@ -40,7 +40,7 @@ const Main = () => {
           </div>
         </div>
         <div className="flex flex-col gap-3">
-          <div className="flex text-white relative left-[45px] flex-row gap-14">
+          <div className="md:hidden flex text-white relative left-[45px] flex-row gap-14">
               <FaArrowLeft />
               <FaArrowRight />
           </div>
