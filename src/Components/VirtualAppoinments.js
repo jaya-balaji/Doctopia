@@ -18,8 +18,8 @@ const VirtualAppoinments = () => {
 
   return (
     <div onClick={()=>setValue(false)} id="facility" className="flex flex-col gap-8 pt-[4vh] px-4 pb-[6vh] md:flex-row md:gap-5 md:px-16 md:pt-[6vh]">
-      <div className="flex flex-row bg-white shadow-2xl hover:shadow-2xl hover:scale-[102%] transition-transform duration-500 rounded-3xl h-[40vh] items-center md:items-baseline md:h-auto w-[100%] p-3 md:w-[55%] md:p-6 md:pr-3">
-        <div className="flex flex-col justify-between rounded-3xl h-[35vh] w-[40vh] p-3 md:h-[68vh] md:w-[45vh] md:p-7 BackgroundAtVACalBig">
+      <div className="flex flex-row bg-white shadow-2xl hover:shadow-2xl hover:scale-[102%] transition-transform duration-500 rounded-3xl h-auto items-center md:items-baseline md:h-auto w[100%] p-3 md:w-[55%] md:p-6 md:pr-3">
+        <div className="flex flex-col justify-between rounded-3xl h-[40vh] w-[40vh] p-3 md:h-[68vh] md:w-[45vh] md:p-7 BackgroundAtVACalBig">
           <div className="flex flex-row justify-between">
             <div className="BackgroundAtVACalSmall flex flex-row justify-end rounded-2xl shadow-black shadow-2xl h-20 w-16 p-1 md:p-2 md:h-32 md:w-24">
               <RiChatVoiceLine className="text-white"/>
@@ -54,9 +54,9 @@ const VirtualAppoinments = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-76 md:pr-0 md:w-[60%]">
+        <div className="flex flex-col w-[70%] md:pr-0 md:w-[60%]">
           <div className="flex justify-center items-center border-b-2 p-3 relative md:p-5">
-            <span className="font-semibold text-2xl md:text-5xl">
+            <span className="font-semibold text-xl md:text-5xl">
               Virtual Appointments
             </span>
             <div className="bg-slate-200 bg-opacity-45 rounded-full absolute top-0 right-4 p-2 md:top-[0px] md:right-[10px] md:p-4">

@@ -9,6 +9,7 @@ import Girl from "../Assets/girl.webp";
 import { useContext } from "react";
 import { MyContext } from "./Context";
 import { FaArrowLeft } from "react-icons/fa";
+import { Carousel } from 'react-bootstrap';
 
 const Main = () => {
   const { value, setValue } = useContext(MyContext);
@@ -39,11 +40,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3">
-          <div className="md:hidden flex text-white relative left-[45px] flex-row gap-14">
-              <FaArrowLeft />
-              <FaArrowRight />
-          </div>
+        <div>
           <div className="flex md:flex-row gap-3 pl-4 pb-4 md:gap-10 md:pl-16">
             <div className="flex flex-col justify-between bg-white hover:shadow-2xl hover:scale-[105%] transition-transform duration-1500 rounded-3xl w-[150px] h-[150px] p-3 md:w-[200px] md:h-[200px] md:p-5 Background">
               <div className="flex flex-row justify-between items-center md:gap-3">
